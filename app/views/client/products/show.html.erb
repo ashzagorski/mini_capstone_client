@@ -1,0 +1,8 @@
+
+<h2>Type: <%= @product["name"] %></h2>
+<h4>Description: <%= @product["description"] %></h4>
+<h5>Price: <%= @product["formatted"]["price"] %></h5>
+<h5><%= @product["formatted"]["created_at"] %></h5>
+
+<a href="/client/products/<%= @product["id"] %>/edit" >Edit</a>
+<a href="/client/products/<%= @product["id"] %>" data-method="delete">Delete</a>
